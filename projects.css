@@ -18,6 +18,7 @@
 .projectsIntro{
     color: rgba(255, 255, 255, 0.644);
     color: #132D4D;
+    opacity: 64%;
     margin-bottom: 4rem;
     text-align: center;
 }
