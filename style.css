@@ -55,6 +55,7 @@ body{
 header{
     width: 100%;
     height: 8%;
+    max-height: 150px;
     border-bottom:solid 1px rgba(255, 255, 255, 0.644);
     background-image: url('bg-pictures/header-bg.png');
     background-position: center;
@@ -241,6 +242,7 @@ a{
 footer{
     width: 100%;
     height: 8%;
+    max-height: 150px;
     background-image: url('bg-pictures/footer-bg.png');
     background-position:  center;
     background-repeat: no-repeat;
