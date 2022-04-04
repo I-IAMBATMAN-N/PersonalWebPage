@@ -1,0 +1,141 @@
+
+.project-content{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    left: 0;
+    right: 0;
+    margin-top: 0.5rem;
+    color: rgba(255, 255, 255, 0.644);
+}
+.projectsHeadline{
+    padding: 0;
+    margin: 0;
+    color: rgba(0, 128, 128, 0.644);
+    margin-top: 3rem;
+    text-align: center;
+}
+.projectsIntro{
+    color: rgba(255, 255, 255, 0.644);
+    color: #132D4D;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.project-view a{
+    color: rgba(255, 255, 255, 0.644);
+}
+.view{
+    height: 100%;
+    width: 60%;
+    transition: 1s ease;
+}
+.view h3{
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    color: #132D4D;
+    opacity: 64%;
+}
+.secondView, .fourthView{
+    text-align: right;
+}
+.view:hover{
+    width: 70%;
+}
+.project-container{
+    width: 100%;
+    height: 250px;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+}
+.even{
+    justify-content: left;
+}
+.odd{
+    justify-content: right;
+}
+.firstView, .thirdView{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image:linear-gradient(to right, rgba(255, 255, 255, 0.644), rgba(255, 255, 255, 0));
+}
+.secondView, .fourthView{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image:linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.644));
+}
+.viewDescription{
+    color: rgba(255, 255, 255, 0.644);
+    width: 30%;
+    height: 100%;
+    margin: 0 0.5rem;
+    transition: 1s ease;
+    font-size: 0.82rem;
+    opacity: 0%;
+}
+.viewDescription > *{
+    margin: 0;
+    padding: 0;
+}
+.viewDescription h3 {
+    display: inline;
+    padding-right: 0.75rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.644);
+}
+.viewDescription p {
+    font-size: 1rem;
+    width: 100%;
+    height: 70%;
+    margin-top: 0.75rem;
+    transition: 1s ease;
+}
+.showDescription{
+    opacity: 75%;
+    right: 0%;
+}
+@media(max-width: 992px){
+    .project-content{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        left: 0;
+        right: 0;
+        margin-top: 0.5rem;
+    }
+    .project-view-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        left: 0;
+        right: 0;
+    }
+    .project-view{
+        width: 91%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        left: 0;
+        right: 0;
+    }
+    .project-container{
+        width: 91%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        left: 0;
+        right: 0;
+    }
+    .view{
+        width: 70%;
+    }
+    .viewDescription{
+        opacity: 100%;
+    }
+}
