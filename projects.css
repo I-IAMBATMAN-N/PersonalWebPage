@@ -13,13 +13,12 @@
     padding: 0;
     margin: 0;
     color: rgba(0, 128, 128, 0.644);
-    margin-top: 3rem;
     text-align: center;
 }
 .projectsIntro{
     color: rgba(255, 255, 255, 0.644);
     color: #132D4D;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
 .project-view a{
@@ -105,6 +104,9 @@
         left: 0;
         right: 0;
         margin-top: 0.5rem;
+    }
+    .intro{
+        display: none;
     }
     .project-view-container{
         display: flex;
