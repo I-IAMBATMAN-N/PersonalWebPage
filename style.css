@@ -21,13 +21,18 @@ html{
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
-    scrollbar-width: none;
 }
 body{
     width: 100%;
     height: auto;
     display: flex;
     flex: column;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-y: scroll; 
+}
+body::-webkit-scrollbar {
+    display: none; 
 }
 .lobby{
     width: 100%;
