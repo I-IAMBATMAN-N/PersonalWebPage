@@ -10,6 +10,7 @@
 }
 *{
     box-sizing: border-box;
+    transition: 2s ease;
 }
 html{
     width: 100%;
@@ -65,7 +66,7 @@ body{
     transition: 1s ease;
 }
 .languageChoice:hover{
-
+    
 }
 .container{
     width: 100%;
