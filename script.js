@@ -22,14 +22,14 @@ for(let i = 0; i < views.length; i++){
         viewDescriptions[i].classList.remove('showDescription');
     })
 }
-/*loading of views - */
+/*loading views - PROJECTS page*/
 
 for(let i = 0; i < views.length; i++){
-    views[i].setTimeout(() => {
-        views[i].getElementsByClassName.opacity = "";
+    setTimeout(() => {
+        views[i].style.opacity = "100";
     },
     timer);
-    timer += 250;
+    timer -= 300;
 }
 
 /*hamburger animatiuon handler*/
