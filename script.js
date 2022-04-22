@@ -44,7 +44,7 @@ for(let i = 0; i < inputs.length; i++){
     projectTimer -= 250;
 }
 
-let contactLinks = document.querySelectorAll('.contactLink');
+const contactLinks = document.querySelectorAll('.contactLink');
 let contactLinksTimer = 1234;
 
 for(let i = 0; i < contactLinks.length; i++){
@@ -54,6 +54,12 @@ for(let i = 0; i < contactLinks.length; i++){
     contactLinksTimer);
     contactLinksTimer -= 200;
 }
+
+const footer = document.querySelector('footer');
+setTimeout(() => {
+    footer.style.opacity = "100%";
+ },
+ 750);
 
 setTimeout(() => {
    document.querySelector('textarea').style.opacity = "100";
