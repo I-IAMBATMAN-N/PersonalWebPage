@@ -32,6 +32,8 @@ input{
     border-radius: 5px;
     color: #132D4D;
     font-size: 1.2rem;
+    opacity: 0;
+    transition: 1s ease;
 }
 #name, #number, #email {
     text-align: center;
@@ -84,6 +86,8 @@ textarea{
     margin-right: auto;
     left: 0;
     right: 0;
+    opacity: 0;
+    transition: 1s ease;
 }
 button{
     margin: 1.2rem;
@@ -101,6 +105,8 @@ button{
     margin-right: auto;
     left: 0;
     right: 0;
+    opacity: 0;
+    transition: 1s ease;
 }
 button:hover{
     cursor: pointer;
@@ -124,6 +130,8 @@ button:hover{
     border-radius: 5px;
     width: 49%;
     height: 6rem;
+    opacity: 0;
+    transition: 1s ease;
 }
 .contactLink > h3{
     width: 100%;
