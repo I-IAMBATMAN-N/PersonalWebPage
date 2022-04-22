@@ -9,11 +9,24 @@ let views = document.querySelectorAll('.view');
 
 let viewDescriptions = document.querySelectorAll('.viewDescription');
 
+let timer = 2000;
+
+/*showing view descipritons on PROJECT page*/
 
 for(let i = 0; i < views.length; i++){
     views[i].addEventListener('mouseover', function(){
         viewDescriptions[i].classList.add('showDescription');
     })
+}
+
+/*showing view descipritons on PROJECT page*/
+
+for(let i = 0; i < views.length; i++){
+    views[i].setTimeout(() => {
+        
+    },
+    timer);
+    timer += 250;
 }
 
 for(let i = 0; i < views.length; i++){
@@ -43,8 +56,3 @@ contactLink.addEventListener("mouseout", () => {
     icon.classList.toggle("invisible");
     contactLink.classList.toggle("justifyCenter");
 })
-
-
-
-
-

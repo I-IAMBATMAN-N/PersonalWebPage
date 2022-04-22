@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="../normalize.css">
         <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="../contact.css">
         <title>Contact</title>
     </head>
     <body>
@@ -21,17 +21,17 @@
                 </div>
                 <nav class="navbar">
                     <ul class="nav-menu">
-                        <li class="nav-item ">
+                        <li class="nav-item">
                             <a href="index.html" class="nav-link home">Home</a>
                         </li>
                         <li class="nav-item">
-                                <a href="about.html" class="nav-link">About</a>
+                                <a href="about.html" class="nav-link">O mně</a>
                         </li>
                         <li class="nav-item">
-                            <a href="projects.html" class="nav-link projects">Projects</a>
+                            <a href="projects.html" class="nav-link projects">Projekty</a>
                         </li>
                         <li class="nav-item activated">
-                            <a href="contact.html" class="nav-link contact">Contact</a>
+                            <a href="contact.html" class="nav-link contact">Kontakt</a>
                         </li>
                     </ul>
                 </nav>
@@ -47,11 +47,11 @@
             <div class="contact-content">
                 <form onsubmit="sendEmail(); reset();">
                     <div class="textarea-content">
-                        <textarea name="textarea" id="textarea" cols="30" rows="20" placeholder="Your message here..." required></textarea>
+                        <textarea name="textarea" id="textarea" cols="30" rows="20" placeholder="Vaše zpráva..." required></textarea>
                         <div class="input-types">
-                                <input type="text" id="name" placeholder="name" required>
-                                <input type="tel" id="number" placeholder="phone number" required>
-                                <input type="email" id="email" placeholder="email" required>
+                                <input type="text" id="name" placeholder="jméno" required>
+                                <input type="tel" id="number" placeholder="telefonní číslo" required>
+                                <input type="email" id="email" placeholder="e-mail" required>
                         </div>
                         <button type="submit">Send</button>
                 </form>
@@ -61,7 +61,7 @@
                         <a href="mailto:jakub.briza.1992@seznam.cz"><p class="contactText">jakub.briza.1992@seznam.cz</p></a>
                     </div>
                     <div class="contactLink number">
-                        <h3>Phone</h3>
+                        <h3>Telefonní číslo</h3>
                         <a href="phone:+420774729783"><p class="contactText">+420774729783</p></a>
                     </div>
                 </div>
@@ -75,8 +75,9 @@
             </div>
         </footer>
         <!-- JS -->
-        <script src="script.js"></script>
+        <script src="../script.js"></script>
+        <script src="../load.js"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script src="email.js"></script>
+        <script src="../email.js"></script>
     </body>
 </html>

@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-
+    <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href="../style.css">
     <title>Home</title>
 </head>
     <body>
         <!--==================================== HEADER ==================================== -->
-        <header>
+        <header class="firstLoad"><!--invisible-->
             <div class="header-container">
                 <div class="logo">
                     <a href="index.html" class="JB">JB</a>
@@ -25,13 +24,13 @@
                             <a href="index.html" class="nav-link home">Home</a>
                         </li>
                         <li class="nav-item">
-                                <a href="about.html" class="nav-link">About</a>
+                                <a href="about.html" class="nav-link">O mně</a>
                         </li>
                         <li class="nav-item">
-                            <a href="projects.html" class="nav-link projects">Projects</a>
+                            <a href="projects.html" class="nav-link projects">Projekty</a>
                         </li>
                         <li class="nav-item">
-                            <a href="contact.html" class="nav-link contact">Contact</a>
+                            <a href="contact.html" class="nav-link contact">Kontakt</a>
                         </li>
                     </ul>
                 </nav>
@@ -45,15 +44,15 @@
         <!--==================================== CONTENT ==================================== -->
         <div class="container home">
             <div class="home-content">
-                <div class="home-text">
+                <div class="homeText secondLoad"><!--invisible-->
                     <h1>
-                        Intro
+                        Vítej
                     </h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae et ex molestiae quaerat autem laudantium repellat, laboriosam nihil rem libero magni, hic eligendi amet exercitationem voluptatibus doloremque quo illo commodi! Illo impedit veniam similique voluptatibus dolor ipsa vel in pariatur mollitia enim quas nobis corrupti, ipsam exercitationem! Nam suscipit, quasi itaque aliquid soluta voluptatibus ab ex labore odit error quas! Aliquam labore porro aspernatur cupiditate beatae! Quisquam officia omnis eum ratione ipsa, sit dignissimos nam id iure exercitationem, eaque vel dolorem reprehenderit. Amet facilis inventore temporibus a neque numquam sequi aliquid, obcaecati quasi. Voluptas doloribus voluptates distinctio rem laborum nihil!
                     </p>
                 </div>
-                <div class="profile-picture">
+                <div class="profile-picture thirdLoad "> <!--invisible-->
                     
                 </div>
             </div>
@@ -66,6 +65,7 @@
             </div>
         </footer>
         <!-- JS -->
-        <script src="script.js"></script>
+        <script src="../load.js"></script>
+        <script src="../script.js"></script>
     </body>
 </html>
