@@ -34,6 +34,22 @@ body{
 body::-webkit-scrollbar {
     display: none; 
 }
+.container{
+    width: 100%;
+    height:fit-content;
+    max-width: 992px;
+    padding-top: 10rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: 2s ease;
+}
 .lobby{
     width: 100%;
     height: auto;
@@ -69,22 +85,7 @@ body::-webkit-scrollbar {
     color: #132D4D;
     transition: 1s ease;
 }
-.container{
-    width: 100%;
-    max-width: 992px;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    opacity: 0;
-    transition: 2s ease;
-}
+
 .filler{
     width: 100%;
     max-width: 992px;
@@ -426,8 +427,6 @@ footer{
     }
     .about-text{
         width: fit-content;
-        margin-left: 3rem;
-        margin-right: 3rem;
     }
     .profile-picture{
         display: none;
@@ -443,9 +442,6 @@ footer{
     .homeText{
         width: 100%;
         position:absolute;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1rem 2rem;
     }
     .homeText h1, p{
         text-align: left;
