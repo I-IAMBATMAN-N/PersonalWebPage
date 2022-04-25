@@ -158,6 +158,11 @@ button:hover{
 .contactLink a:hover{
     text-decoration: none;
 }
+.contactFiller{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
 .visible{
     opacity: 100%;
 }

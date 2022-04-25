@@ -73,6 +73,9 @@ body::-webkit-scrollbar {
     width: 100%;
     max-width: 992px;
     padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -249,6 +252,9 @@ a{
     color: rgba(255, 255, 255, 0.822);
     text-align: left;
     transition: 2s;
+}
+.homeText > p{
+
 }
 .homeText > h1{
     color: rgba(0, 128, 128, 0.644);
