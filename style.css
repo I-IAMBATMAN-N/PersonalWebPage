@@ -347,6 +347,14 @@ footer{
     display: none;
 }
 @media(max-width: 992px){
+    body{
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        overflow-y: scroll; 
+    }
+    body::-webkit-scrollbar {
+        display: none; 
+    }
     header{
         position: fixed;
         display: block;

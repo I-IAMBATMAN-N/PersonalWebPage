@@ -1,30 +1,33 @@
-/*RESPONSIVE NAV MENU VARIABLES*/
+/*HAMBURGER animation*/
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-const hider = document.querySelector(".hider");
-const container = document.querySelector(".container");
+const container = document.querySelector('.container');
 
-let views = document.querySelectorAll('.view');
+/*hamburger animation handler*/
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    container.classList.toggle("active-hide")
+})
 
-let inputs = document.querySelectorAll('input');
-
-let viewDescriptions = document.querySelectorAll('.viewDescription');
-
+/*=============================LOAD functions=============================*/
+//Timers
 let timer = 2000;
-
-
-
-let screenWidth = screen.width;
-
-const footer = document.querySelector('footer');
-
-const contactLinks = document.querySelectorAll('.contactLink');
-
+let projectTimer = 2000;
 let contactLinksTimer = 1234;
 
-let projectTimer = 2000;
+//General
+const footer = document.querySelector('footer');
 
-if(screen.width > 992){
+/*Projects page related*/
+let views = document.querySelectorAll('.view');
+let viewDescriptions = document.querySelectorAll('.viewDescription');
+
+/*CONTACT page related*/
+let inputs = document.querySelectorAll('input');
+const contactLinks = document.querySelectorAll('.contactLink');
+
+if(window.width > 992){
     /*=============================PROJECTS-PAGE functions=============================*/
     /*PROJECT-VIEWS hover functions*/
     /*showing view descipritons on PROJECT page after hovering PROJECT-VIEW*/
@@ -55,7 +58,6 @@ if(screen.width > 992){
         projectTimer);
         projectTimer -= 250;
     }
-
     /*=============================CONTACT-PAGE functions=============================*/
     /*loading CONTACT FORM contact.html*/
     for(let i = 0; i < contactLinks.length; i++){
@@ -72,8 +74,8 @@ if(screen.width > 992){
 
     setTimeout(() => {
     document.querySelector('textarea').style.opacity = "100";
-    },
-    2400);
+    }
+    ,2400);
     setTimeout(() => {
         document.querySelector('button').style.opacity = "100";
     },
@@ -89,16 +91,10 @@ else{
     for(let i = 0; i < views.length; i++){
         contactLinks[i].style.opacity = "100%";
     }
-    document.querySelector('textarea').style.opacity = "100";
-    document.querySelector('button').style.opacity = "100";
+    document.querySelector('textarea').style.opacity = "100%";
+    document.querySelector('button').style.opacity = "100%";
 
     footer.style.opacity = "100%";
 }
 
-/*hamburger animatiuon handler*/
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-    container.classList.toggle("active-hide")
-})
 
