@@ -12,37 +12,45 @@ let viewDescriptions = document.querySelectorAll('.viewDescription');
 
 let timer = 2000;
 
-/*showing view descipritons on PROJECT page*/
+/*showing view descipritons on PROJECT page after hovering PROJECT-VIEW*/
 
-for(let i = 0; i < views.length; i++){
-    views[i].addEventListener('mouseover', function(){
-        viewDescriptions[i].classList.add('showDescription');
-    })
-}
-for(let i = 0; i < views.length; i++){
-    views[i].addEventListener('mouseout', function(){
-        viewDescriptions[i].classList.remove('showDescription');
-    })
-}
-/*loading views - PROJECTS page*/
+let screenWidth = screen.width;
 
-for(let i = 0; i < views.length; i++){
-    setTimeout(() => {
-        views[i].style.opacity = "100";
-    },
-    timer);
-    timer -= 300;
+if(screenWidth > 10){
+    for(let i = 0; i < views.length; i++){
+        views[i].addEventListener('mouseover', function(){
+            viewDescriptions[i].classList.add('showDescription');
+        })
+    }
+    for(let i = 0; i < views.length; i++){
+        views[i].addEventListener('mouseout', function(){
+            viewDescriptions[i].classList.remove('showDescription');
+        })
+    }
+    /*loading views - PROJECTS page*/
+    
+    for(let i = 0; i < views.length; i++){
+        setTimeout(() => {
+            views[i].style.opacity = "100";
+        },
+        timer);
+        timer -= 300;
+    }
+
+    let projectTimer = 2000;
+    
+    for(let i = 0; i < inputs.length; i++){
+        setTimeout(() => {
+            inputs[i].style.opacity = "100";
+        },
+        projectTimer);
+        projectTimer -= 250;
+    }
+}else{
+
 }
+
 /*loading CONTACT FORM contact.html*/
-let projectTimer = 2000;
-
-for(let i = 0; i < inputs.length; i++){
-    setTimeout(() => {
-        inputs[i].style.opacity = "100";
-    },
-    projectTimer);
-    projectTimer -= 250;
-}
 
 const contactLinks = document.querySelectorAll('.contactLink');
 let contactLinksTimer = 1234;
