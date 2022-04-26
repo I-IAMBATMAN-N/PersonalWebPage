@@ -1,4 +1,3 @@
-
 .project-content{
     width: 100%;
     margin-left: auto;
@@ -12,7 +11,9 @@
 .projectsHeadline{
     padding: 0;
     margin: 0;
-    color: rgba(0, 128, 128, 0.644);
+    color: #132D4D;
+    opacity: 64%;
+    text-decoration: underline;
     text-align: center;
 }
 .projectsIntro{
@@ -21,9 +22,6 @@
     opacity: 64%;
     margin-bottom: 4rem;
     text-align: center;
-}
-.project-view a{
-    color: rgba(255, 255, 255, 0.644);
 }
 .view{
     height: 100%;
@@ -74,7 +72,7 @@
     height: 100%;
     margin: 0 0.5rem;
     transition: 1s ease;
-    font-size: 0.82rem;
+    font-size: 82%;
     opacity: 0%;
 }
 .viewDescription > *{
@@ -85,7 +83,6 @@
     display: inline;
     padding-right: 0.75rem;
     font-size: 1.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.644);
 }
 .viewDescription p {
     font-size: 1rem;
@@ -99,48 +96,34 @@
     right: 0%;
 }
 @media(max-width: 992px){
-    .project-content{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 2rem;
-        left: 0;
-        right: 0;
+    .intro{
         margin-top: 0.5rem;
     }
-    .intro{
+    .projectsHeadline{
+        font-size: 82%;
+    }
+    .projectsIntro{
         display: none;
-    }
-    .project-view-container{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 2rem;
-        left: 0;
-        right: 0;
-    }
-    .project-view{
-        width: 91%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 2rem;
-        left: 0;
-        right: 0;
     }
     .project-container{
         width: 91%;
+        height: 125px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 2rem;
-        left: 0;
-        right: 0;
     }
     .view{
         width: 70%;
     }
+    .view > h3{
+        font-size: 82%;
+    }
     .viewDescription{
         opacity: 100%;
+    }
+    .viewDescription h3 {
+        font-size: 82%;
+    }
+    .viewDescription > p{
+        font-size: 73%;
     }
 }

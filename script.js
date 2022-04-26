@@ -27,7 +27,7 @@ let viewDescriptions = document.querySelectorAll('.viewDescription');
 let inputs = document.querySelectorAll('input');
 const contactLinks = document.querySelectorAll('.contactLink');
 
-if(window.width > 992){
+if(screen.width > 992){
     /*=============================PROJECTS-PAGE functions=============================*/
     /*PROJECT-VIEWS hover functions*/
     /*showing view descipritons on PROJECT page after hovering PROJECT-VIEW*/
@@ -85,10 +85,10 @@ else{
     for(let i = 0; i < views.length; i++){
         views[i].style.opacity = "100%";
     }
-    for(let i = 0; i < views.length; i++){
+    for(let i = 0; i < inputs.length; i++){
         inputs[i].style.opacity = "100%";
     }
-    for(let i = 0; i < views.length; i++){
+    for(let i = 0; i < contactLinks.length; i++){
         contactLinks[i].style.opacity = "100%";
     }
     document.querySelector('textarea').style.opacity = "100%";

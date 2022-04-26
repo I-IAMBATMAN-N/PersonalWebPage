@@ -36,11 +36,8 @@ body::-webkit-scrollbar {
 }
 .container{
     width: 100%;
-    height:fit-content;
     max-width: 992px;
-    padding-top: 10rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 10rem 1rem;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -67,8 +64,10 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .languageChoice{
     width: 46%;
@@ -79,12 +78,11 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.466);
-    font-size: 180%;
+    font-size: 1.8rem;
     border-radius: 7px;
     color: #132D4D;
     transition: 1s ease;
 }
-
 .filler{
     width: 100%;
     max-width: 992px;
@@ -173,7 +171,7 @@ a{
     border-radius: 5px;
     color: rgba(255, 255, 255, 0.822);
     transition: 0.6s ease;
-    font-size: 1.12rem;
+    font-size: 112%;
 }
 .nav-item:hover{
     color: #132D4D;
@@ -203,7 +201,7 @@ a{
     align-items: center;
 }
 .JB{
-    font-size: 3.2rem;
+    font-size: 320%;
     padding: 0 7%;
     color: rgba(255, 255, 255, 0.822);
 }
@@ -221,7 +219,7 @@ a{
     padding-bottom: 1rem;
 }
 .first-name{
-    font-size: 1rem;
+    font-size: 100%;
     margin-top: 1rem;
     text-align: left;
     color: rgba(255, 255, 255, 0.822);
@@ -231,9 +229,10 @@ a{
 }
 .surname{
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 140%;
     font-weight: bold;
 }
+/*=======================CONTENT/*=======================*/
 .home{
     max-width: 960px;
     margin-left: auto;
@@ -253,11 +252,9 @@ a{
     text-align: left;
     transition: 2s;
 }
-.homeText > p{
-
-}
 .homeText > h1{
-    color: rgba(0, 128, 128, 0.644);
+    color: #132D4D;
+    opacity: 64%;
 }
 .profile-picture{
     margin: 0 2rem;
@@ -286,7 +283,8 @@ a{
 }
 .about-text > h1{
     text-align: left;
-    color: rgba(0, 128, 128, 0.644);
+    color: #132D4D;
+    opacity: 64%;
 }
 footer{
     width: 100%;
@@ -328,12 +326,11 @@ footer{
     font-size: 75%;
 }
 .footer-upper{
-    font-size: 1.2rem;
+    font-size: 120%;
     font-weight: bold;
 }
 .activated{
     padding: 0;
-    /* padding-top: 3rem; */
     background-color: rgba(255, 255, 255, 0.466);
     color: white;
 }
@@ -355,7 +352,21 @@ footer{
     body::-webkit-scrollbar {
         display: none; 
     }
+    .languageChoices{
+        width: 100%;
+        max-width: 700px;
+        height: 500px;
+    }
+    .languageChoice{
+        width: 46%;
+        height: 73px;
+        font-size: 1.8rem;
+        border-radius: 7px;
+        color: #132D4D;
+        transition: 1s ease;
+    }
     header{
+        height: 10%;
         position: fixed;
         display: block;
         padding: 1% 0;
@@ -387,14 +398,12 @@ footer{
         height: 50%;
         width: 100%;
         position: fixed;
+        margin-top: 42rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 755px;
         left: -100%;
-        background-color: rgba(255, 255, 255, 0);
         transition: 0.4s;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.644);
     }
     .nav-item{
         height: 23%;
@@ -403,9 +412,6 @@ footer{
         justify-content: center;
         align-items: center;
         padding: 0;
-    }
-    .nav-item:hover{
-        padding-top: 0;
     }
     .nav-item > a:hover{
         color: rgba(255, 255, 255, 0.822);
