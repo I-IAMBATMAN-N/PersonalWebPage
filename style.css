@@ -44,7 +44,6 @@ body::-webkit-scrollbar {
     left: 0;
     right: 0;
     z-index: -1;
-    transition: 2s ease;
 }
 .lobby{
     width: 100%;
@@ -337,13 +336,13 @@ footer{
 .activated a{
     color: #132D4D;
 }
-.active-show{
-    display:block;
+.active-hide-opacity{
+    opacity: 0;
 }
-.active-hide{
+.active-hide-display{
     display: none;
 }
-@media(max-width: 992px){
+@media (max-width: 992px){
     body{
         scrollbar-width: none;
         -ms-overflow-style: none;
@@ -398,12 +397,13 @@ footer{
         height: 50%;
         width: 100%;
         position: fixed;
-        margin-top: 42rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        top: 0;
         left: -100%;
-        transition: 0.4s;
+        margin-top: 8rem;
+        transition: 0.4s; 
     }
     .nav-item{
         height: 23%;
