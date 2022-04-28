@@ -39,7 +39,6 @@ let gitLinks = document.querySelectorAll('.git-links');
 let inputs = document.querySelectorAll('input');
 const contactLinks = document.querySelectorAll('.contactLink');
 
-
 if(document.title.includes("roj")){
     if(screen.width > 992){
         /*=============================PROJECTS-PAGE functions=============================*/
