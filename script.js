@@ -103,11 +103,11 @@ if(document.title == "Projects"){
         setTimeout(() => {
         document.querySelector('textarea').style.opacity = "100";
         }
-        ,2400);
+        ,2800);
         setTimeout(() => {
             document.querySelector('button').style.opacity = "100";
         },
-        2200);
+        2500);
     }else{
         for(let i = 0; i < inputs.length; i++){
             inputs[i].style.opacity = "100%";
