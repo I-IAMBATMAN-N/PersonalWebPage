@@ -40,7 +40,7 @@ let inputs = document.querySelectorAll('input');
 const contactLinks = document.querySelectorAll('.contactLink');
 
 
-if(document.title == "Projects"){
+if(document.title.includes("roj")){
     if(screen.width > 992){
         /*=============================PROJECTS-PAGE functions=============================*/
         /*PROJECT-VIEWS hover functions*/
@@ -79,7 +79,7 @@ if(document.title == "Projects"){
         }
         footer.style.opacity = "100%";
     }
-}else  if(document.title == "Contact"){
+}else  if(document.title.includes("onta")){
     if(screen.width > 992){
         /*=============================CONTACT-PAGE functions=============================*/
         /*loading CONTACT FORM contact.html*/
