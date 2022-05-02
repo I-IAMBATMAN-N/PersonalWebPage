@@ -86,7 +86,7 @@
     height: 100%;
     margin: 0 0.5rem;
     transition: 1s ease;
-    font-size: 82%;
+    font-size: 0.8rem;
     opacity: 0%;
 }
 .viewDescription > *{
@@ -108,19 +108,19 @@
 .showDescription{
     opacity: 75%;
 }
-@media(max-width: 992px){
+@media only screen and(min-width: 480px) and (max-width: 992px){
     .intro{
         margin-top: 0.5rem;
     }
     .projectsHeadline{
-        font-size: 82%;
+        font-size: 0.8rem;
     }
     .projectsIntro{
         display: none;
     }
     .project-container{
         width: 91%;
-        height: 125px;
+        height: 200px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -128,27 +128,38 @@
         width: 70%;
     }
     .view > h3{
-        font-size: 82%;
+        font-size: 0.8rem;
     }
     .viewDescription{
         opacity: 100%;
     }
     .viewDescription h3 {
-        font-size: 82%;
         margin: 0;
     }
     .viewDescription > p{
-        font-size: 73%;
         margin: 0;
         margin-top: 0.25rem;
         opacity: 82%;
     }
     .git-links{
         opacity: 100%;
-        font-size: 73%;
     }
     .git-links > a{
         opacity: 100%;
-        font-size: 73%;
+    }
+}
+@media only screen and(min-width: 320px) and (max-width: 480px){
+    .viewDescription h3 {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    .viewDescription > p{
+        font-size: 0.73rem;
+        margin: 0;
+        margin-top: 0.25rem;
+    }
+    .git-links{
+        opacity: 100%;
+        font-size: 0.73rem;
     }
 }
