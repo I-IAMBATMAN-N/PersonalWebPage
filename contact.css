@@ -224,4 +224,7 @@ button:hover{
     #textarea{
         padding: 1rem;
     }
+    .hide-mobile{
+        display: none;
+    }
 }

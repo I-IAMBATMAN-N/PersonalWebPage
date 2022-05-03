@@ -255,6 +255,18 @@ a{
     color: #132D4D;
     opacity: 64%;
 }
+.homeText > p{
+    line-height: 2em;
+}
+.link{
+    color: rgba(255, 255, 255, 0.822);
+    transition: 1s ease;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.link:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.822);
+}
 .profile-picture{
     margin: 0 2rem;
     background-image: linear-gradient(rgba(255, 255, 255, 0.466), rgba(255, 255, 255, 0));
@@ -284,6 +296,9 @@ a{
     text-align: left;
     color: #132D4D;
     opacity: 64%;
+}
+.about-text > p{
+    line-height: 2em;
 }
 footer{
     width: 100%;
@@ -441,9 +456,6 @@ footer{
     .about-text{
         width: fit-content;
     }
-    .profile-picture{
-        display: none;
-    }
     .contact{
         background-color: rgba(248, 147, 110, 0);
     }   
@@ -468,4 +480,8 @@ footer{
     .activated > a{
         color:#132D4D;
     }
+    .profile-picture{
+        display: block;
+    }
 }
+

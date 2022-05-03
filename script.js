@@ -3,6 +3,7 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const container = document.querySelector('.container');
 
+
 /*hamburger animation handler*/
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
