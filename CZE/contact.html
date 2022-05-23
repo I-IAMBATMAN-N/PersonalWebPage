@@ -45,12 +45,12 @@
         <!--==================================== CONTENT ==================================== -->
         <div class="container"> 
             <div class="formContainer">
-                <form onsubmit="sendEmail(); reset();">
-                    <textarea name="textarea" id="textarea" cols="30" rows="20" placeholder="Vaše zpráva..." required></textarea>
+                <form action="https://formsubmit.co/jakub.briza.1992@seznam.cz" method="POST">
+                    <textarea name="textarea" id="textarea" cols="30" rows="20" name="message" placeholder="Vaše zpráva..." required></textarea>
                     <div class="input-types">
-                            <input type="text" id="name" placeholder="jméno" required>
-                            <input type="tel" id="number" placeholder="telefonní číslo" required>
-                            <input type="email" id="email" placeholder="email" required>
+                            <input type="text" id="name" name="name" placeholder="jméno" required>
+                            <input type="tel" id="number" name="number" placeholder="telefonní číslo" required>
+                            <input type="email" id="email" name="email" placeholder="email" required>
                     </div>
                     <button type="submit">Send</button>
                 </form>
@@ -75,7 +75,5 @@
         </footer>
         <!-- JS -->
         <script src="../script.js"></script>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script src="../email.js"></script>
     </body>
 </html>
